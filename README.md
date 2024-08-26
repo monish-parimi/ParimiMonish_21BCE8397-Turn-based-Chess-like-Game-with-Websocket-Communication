@@ -1,106 +1,109 @@
-# MAAZ-KHAN-21BCE2085
-Turn-Based Chess-like Game with WebSocket Communication This project is a real-time, turn-based game inspired by chess, developed with a server-client architecture using WebSocket for communication.
+Turn-Based Chess-like Game with WebSockets
 
+This project is a real-time, turn-based strategy game inspired by chess. It uses a server-client architecture with WebSockets for smooth communication between players.
 
+Get Started!
 
-## Prerequisites
-- **Node.js**: Ensure that Node.js is installed on your system.
-- **Web Browser**: Any modern web browser (e.g., Chrome, Firefox, Edge) to run the client.
+Before you jump in, make sure you have the following:
 
-## <b>Setup Instructions</b>
+* Node.js: Download and install Node.js from the official website ([https://nodejs.org/](https://nodejs.org/)) if you don't have it already.
+* Web Browser: Any modern web browser like Chrome, Firefox, or Edge will work.
 
-<b>1. Clone the Repository</b>
-Clone this repository to your local machine using:
-                
-    git clone https://github.com/maazkhan101/MAAZ-KHAN-21BCE2085.git
+Setting Up Your Game
 
-cd project
+Clone the Repository:
 
-<b><h3>1) Server Setup:</h3></b>
+   Open your terminal or command prompt and use the following command to clone this repository:
 
-Navigate to the server directory and install the necessary dependencies:
-    </br>
-    
-    cd server
-    npm install
+   ```bash
+   git clone https://github.com/monish-parimi/ParimiMonish_21BCE8397-Turn-based-Chess-like-Game-with-Websocket-Communication.git
+   ```
 
+   Then, navigate to the project directory:
 
-Start the Server:
+   ```bash
+   cd ParimiMonish_21BCE8397-Turn-based-Chess-like-Game-with-Websocket-Communication
+   ```
 
-Start the WebSocket server:
-</br>
+Server Setup:
 
-    node server.js
+1. Install Dependencies:
 
+   Change directories to the server folder and install the required dependencies using npm:
 
-The server will run on ws://localhost:8080.
+   ```bash
+   cd server
+   npm install
+   ```
 
+2. Start the Server:
 
-<b><h3>2) Client Setup</h3></b>
+   Run the server using the following command:
 
-Navigate to the client directory:
-    
-    cd ../client
+   ```bash
+   node server.js
+   ```
 
-Open the index.html file in your browser:
+   This will start the WebSocket server, typically running on `ws://localhost:8080`.
 
-Alternatively, you can open index.html directly from your file explorer.
+**Client Setup:**
 
+1. **Navigate to Client Directory:**
 
-<b>Playing the Game
+   Go back to the main project directory and navigate to the client folder:
 
-Player Setup:
-</b>
+   ```bash
+   cd ../client
+   ```
 
-The game is played between two players. Each player controls five characters, which can include Pawns, Hero1, and Hero2.
-Players take turns to make moves according to the game rules described below.
-<b>
-Game Flow:
+2. **Launch the Game:**
 
-</b>
-On their turn, a player clicks on one of their characters and selects a valid move.
-The game state updates in real time, displaying the new positions of the characters.
-The game ends when one player eliminates all of the opponent's characters.
+   Open the `index.html` file in your web browser. You can either open it directly using the browser or through your file explorer.
 
-</br>
-<b>
-<b>
-Game Rules
-  <br>
-Game Setup
-</b>
-</br>
-- The game is played on a 5x5 grid by two players.
-- Each player controls 5 characters: a mix of Pawns, Hero1, and Hero2.
-- Players arrange their characters on their respective starting rows.
+Playing the Game
 
-### Characters and Movement
+Match Up:
 
-1. *Pawn*:
-   - Moves one block in any direction (Left, Right, Forward, Backward).
-   - Example command: P1:L (Pawn 1 moves Left).
+The game is designed for two players. Each player controls a team of five characters: Pawns, Hero1s, and Hero2s. Players take turns strategically moving their characters across the board according to the game rules.
 
-2. *Hero1*:
-   - Moves two blocks straight in any direction.
-   - Eliminates any opponent's character in its path.
-   - Example command: H1:F (Hero1 moves Forward).
+How to Play:
 
-3. *Hero2*:
-   - Moves two blocks diagonally in any direction.
-   - Eliminates any opponent's character in its path.
-   - Example command: H2:BR (Hero2 moves Backward-Right).
+On your turn, simply click on one of your characters and choose a valid move from the available options. As moves are made, the game state updates in real-time, reflecting the new positions of all characters. The game continues until one player eliminates all of the opponent's characters, claiming victory!
 
-### Game Flow
+Game Rules:
 
-- Players alternate turns, making one move per turn.
-- If a character lands on an opponent's character, the opponent's character is removed.
-- Invalid moves are not allowed, and players must retry their turn if an invalid move is made.
-- The game ends when one player eliminates all of the opponent’s characters.
+Setting Up the Board:
 
-</br>
-</br>
-<b>
-Contact
-</b>                    
-</br>
-    For any questions or issues, please contact maazkhancode@gmail.com
+* The game takes place on a 5x5 grid.
+* Two players face off, each with five characters strategically placed on their starting row.
+
+Character Movement:
+
+- Pawn: This basic unit can move one space in any direction (left, right, forward, backward).
+- Hero1: A powerful warrior who can move two spaces straight in any direction, eliminating any opponent's character that stands in its path.
+- Hero2: A tactical unit that moves two spaces diagonally in any direction, also eliminating any opponent encountered along the way.
+
+Taking Turns:
+
+* Players alternate turns, making one move per turn.
+
+Combat:
+
+- Landing on an opponent's character eliminates it from the game.
+- Hero1 and Hero2 can eliminate any opponent character within their movement path, not just the final destination.
+
+Invalid Moves:
+
+ The game enforces valid moves. If you attempt an invalid move, you'll need to choose again. Here are some examples of invalid moves:
+    * Selecting an opponent's character.
+    * Moving a character outside the grid boundaries.
+    * Making a move that violates your character's movement pattern (e.g., Pawn moving diagonally).
+    * Attacking a friendly character.
+
+Winning the Game:
+
+ The player who successfully eliminates all of their opponent's characters wins the game!
+
+Contact:
+
+If you have any questions or encounter any issues, feel free to reach out I'd be happy to help!
